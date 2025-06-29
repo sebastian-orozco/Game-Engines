@@ -1,0 +1,318 @@
+{
+    "gameState": {
+        "floats": {},
+        "ints": {},
+        "strings": {}
+    },
+    "sceneTree": {
+        "objects": [
+            {
+                "components": {
+                    "COLLISION": {
+                        "rect": [
+                            40,
+                            40,
+                            2880,
+                            480
+                        ],
+                        "xOffset": 0,
+                        "yOffset": 0
+                    },
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            0.0,
+                            0.0
+                        ],
+                        "filename": "assets\/images\/map.png",
+                        "rect": [
+                            0,
+                            0,
+                            2880,
+                            480
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "world",
+                "scripts": []
+            },
+            {
+                "components": {
+                    "ANIMATEDTEXTURE": {
+                        "currAnimation": "run",
+                        "currFrame": 0,
+                        "filename": "assets\/images\/player.json",
+                        "lastFrame": 5
+                    },
+                    "COLLISION": {
+                        "rect": [
+                            85,
+                            270,
+                            30,
+                            20
+                        ],
+                        "xOffset": 15,
+                        "yOffset": 15
+                    },
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            0.0,
+                            0.0
+                        ],
+                        "filename": "assets\/images\/player_spritesheet.png",
+                        "rect": [
+                            70,
+                            255,
+                            50,
+                            50
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                70.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                255.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "MainPlayer",
+                "scripts": [
+                    "PlayerScript"
+                ]
+            },
+            {
+                "components": {
+                    "ANIMATEDTEXTURE": {
+                        "currAnimation": "run",
+                        "currFrame": 0,
+                        "filename": "assets\/images\/enemy.json",
+                        "lastFrame": 5
+                    },
+                    "COLLISION": {
+                        "rect": [
+                            300,
+                            250,
+                            30,
+                            40
+                        ],
+                        "xOffset": 0,
+                        "yOffset": 0
+                    },
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            0.0,
+                            0.0
+                        ],
+                        "filename": "assets\/images\/enemy_spritesheet.png",
+                        "rect": [
+                            300,
+                            250,
+                            30,
+                            40
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                300.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                250.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "Enemy",
+                "scripts": [
+                    "EnemyScript"
+                ]
+            },
+            {
+                "components": {
+                    "COLLISION": {
+                        "rect": [
+                            30,
+                            230,
+                            2800,
+                            115
+                        ],
+                        "xOffset": 0,
+                        "yOffset": 0
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                30.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                230.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "carpet",
+                "scripts": []
+            }
+        ],
+        "treeNodes": [
+            {
+                "name": "player",
+                "objName": "MainPlayer",
+                "parent": 0
+            },
+            {
+                "name": "enemy",
+                "objName": "Enemy",
+                "parent": 0
+            },
+            {
+                "name": "carpet",
+                "objName": "carpet",
+                "parent": 0
+            },
+            {
+                "name": "world",
+                "objName": "world",
+                "parent": 0
+            }
+        ]
+    },
+    "scripts": ["GameScript"]
+}

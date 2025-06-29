@@ -1,0 +1,123 @@
+{
+    "gameState": {
+        "floats": {},
+        "ints": {},
+        "strings": {}
+    },
+    "sceneTree": {
+        "objects": [
+            {
+                "components": {
+                    "COLLISION": null,
+                    "TEXTURE": null,
+                    "TRANSFORM": null
+                },
+                "name": "GameObject0",
+                "scripts": [
+                    "AsteroidScript"
+                ]
+            },
+            {
+                "components": {
+                    "COLLISION": null,
+                    "TEXTURE": null,
+                    "TRANSFORM": null
+                },
+                "name": "GameObject1",
+                "scripts": [
+                    "AsteroidScript"
+                ]
+            },
+            {
+                "components": {
+                    "COLLISION": null,
+                    "TEXTURE": null,
+                    "TRANSFORM": null
+                },
+                "name": "GameObject2",
+                "scripts": [
+                    "AsteroidScript"
+                ]
+            },
+            {
+                "components": {
+                    "COLLISION": null,
+                    "TEXTURE": null,
+                    "TRANSFORM": null
+                },
+                "name": "GameObject3",
+                "scripts": [
+                    "AsteroidScript"
+                ]
+            },
+            {
+                "components": {
+                    "COLLISION": null,
+                    "TEXTURE": null,
+                    "TRANSFORM": null
+                },
+                "name": "GameObject4",
+                "scripts": [
+                    "AsteroidScript"
+                ]
+            },
+            {
+                "components": {
+                    "COLLISION": null,
+                    "TEXTURE": null,
+                    "TRANSFORM": null
+                },
+                "name": "MainPlayer",
+                "scripts": [
+                    "PlayerScript"
+                ]
+            },
+            {
+                "components": {
+                    "COLLISION": null,
+                    "TRANSFORM": null
+                },
+                "name": "world",
+                "scripts": []
+            }
+        ],
+        "treeNodes": [
+            {
+                "name": "GameObject4",
+                "objName": "GameObject4",
+                "parent": 0
+            },
+            {
+                "name": "GameObject0",
+                "objName": "GameObject0",
+                "parent": 0
+            },
+            {
+                "name": "GameObject3",
+                "objName": "GameObject3",
+                "parent": 0
+            },
+            {
+                "name": "player",
+                "objName": "MainPlayer",
+                "parent": 0
+            },
+            {
+                "name": "GameObject1",
+                "objName": "GameObject1",
+                "parent": 0
+            },
+            {
+                "name": "GameObject2",
+                "objName": "GameObject2",
+                "parent": 0
+            },
+            {
+                "name": "world",
+                "objName": "world",
+                "parent": 0
+            }
+        ]
+    },
+    "scripts": []
+}

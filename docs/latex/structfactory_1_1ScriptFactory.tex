@@ -1,0 +1,33 @@
+\doxysection{factory\+::Script\+Factory Struct Reference}
+\hypertarget{structfactory_1_1ScriptFactory}{}\label{structfactory_1_1ScriptFactory}\index{factory::ScriptFactory@{factory::ScriptFactory}}
+
+
+Singleton factory for creating scripts dynamically.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfactory_1_1ScriptFactory_a8b8eb68c73e046f281fe9959c83b5948}\label{structfactory_1_1ScriptFactory_a8b8eb68c73e046f281fe9959c83b5948} 
+static \mbox{\hyperlink{structfactory_1_1ScriptFactory}{Script\+Factory}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Instance} ()
+\item 
+\Hypertarget{structfactory_1_1ScriptFactory_af5da434172f69a8fe3453eb9cf24719a}\label{structfactory_1_1ScriptFactory_af5da434172f69a8fe3453eb9cf24719a} 
+static {\bfseries Register\+Script\+Factory} (string type, Script\+Factory\+Callback cb)
+\item 
+\Hypertarget{structfactory_1_1ScriptFactory_a091205c8f8c3e7f125ed4c50282758c7}\label{structfactory_1_1ScriptFactory_a091205c8f8c3e7f125ed4c50282758c7} 
+static {\bfseries Create\+Script} (string type, size\+\_\+t o\+Owner, \mbox{\hyperlink{structScene}{Scene}} \texorpdfstring{$\ast$}{*}s\+Owner)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfactory_1_1ScriptFactory_a58b080a533d6b617923414dcbabf53fc}\label{structfactory_1_1ScriptFactory_a58b080a533d6b617923414dcbabf53fc} 
+alias {\bfseries Script\+Factory\+Callback} = \mbox{\hyperlink{interfaceIScript}{IScript}} delegate(size\+\_\+t obj\+Owner, \mbox{\hyperlink{structScene}{Scene}}\texorpdfstring{$\ast$}{*} scene\+Owner)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton factory for creating scripts dynamically. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/factory.\+d\end{DoxyCompactItemize}

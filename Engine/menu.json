@@ -1,0 +1,668 @@
+{
+    "gameState": {
+        "floats": {},
+        "ints": {},
+        "strings": {}
+    },
+    "sceneTree": {
+        "objects": [
+            {
+                "components": {
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            0.0,
+                            0.0
+                        ],
+                        "filename": "assets\/images\/bg_menu.png",
+                        "rect": [
+                            0,
+                            0,
+                            640,
+                            480
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "menu",
+                "scripts": []
+            },
+            {
+                "components": {
+                    "COLLISION": {
+                        "rect": [
+                            40,
+                            40,
+                            40,
+                            40
+                        ],
+                        "xOffset": 0,
+                        "yOffset": 0
+                    },
+                    "TEXT": {
+                        "color": [
+                            255,
+                            255,
+                            255,
+                            255
+                        ],
+                        "dynamic": true,
+                        "fontFile": "assets\/fonts\/Jersey15-Regular.ttf",
+                        "size": 50,
+                        "text": "NIGHTMARE AT THE MUSEUM"
+                    },
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            1.0,
+                            1.0
+                        ],
+                        "rect": [
+                            80,
+                            20,
+                            479,
+                            50
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                80.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                20.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "title",
+                "scripts": []
+            },
+            {
+                "components": {
+                    "COLLISION": {
+                        "rect": [
+                            40,
+                            40,
+                            40,
+                            40
+                        ],
+                        "xOffset": 0,
+                        "yOffset": 0
+                    },
+                    "TEXT": {
+                        "color": [
+                            255,
+                            255,
+                            255,
+                            255
+                        ],
+                        "dynamic": true,
+                        "fontFile": "assets\/fonts\/Jersey15-Regular.ttf",
+                        "size": 40,
+                        "text": "PRESS SPACE TO START"
+                    },
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            1.0,
+                            1.0
+                        ],
+                        "rect": [
+                            150,
+                            420,
+                            327,
+                            40
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                150.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                420.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "button",
+                "scripts": []
+            },
+            {
+                "components": {
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            0.0,
+                            0.0
+                        ],
+                        "filename": "assets\/images\/bg_menu.png",
+                        "rect": [
+                            0,
+                            0,
+                            640,
+                            480
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "menu",
+                "scripts": []
+            },
+            {
+                "components": {
+                    "COLLISION": {
+                        "rect": [
+                            40,
+                            40,
+                            40,
+                            40
+                        ],
+                        "xOffset": 0,
+                        "yOffset": 0
+                    },
+                    "TEXT": {
+                        "color": [
+                            255,
+                            255,
+                            255,
+                            255
+                        ],
+                        "dynamic": true,
+                        "fontFile": "assets\/fonts\/Jersey15-Regular.ttf",
+                        "size": 50,
+                        "text": "NIGHTMARE AT THE MUSEUM"
+                    },
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            1.0,
+                            1.0
+                        ],
+                        "rect": [
+                            80,
+                            20,
+                            479,
+                            50
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                80.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                20.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "title",
+                "scripts": []
+            },
+            {
+                "components": {
+                    "COLLISION": {
+                        "rect": [
+                            40,
+                            40,
+                            40,
+                            40
+                        ],
+                        "xOffset": 0,
+                        "yOffset": 0
+                    },
+                    "TEXT": {
+                        "color": [
+                            255,
+                            255,
+                            255,
+                            255
+                        ],
+                        "dynamic": true,
+                        "fontFile": "assets\/fonts\/Jersey15-Regular.ttf",
+                        "size": 40,
+                        "text": "PRESS SPACE TO START"
+                    },
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            1.0,
+                            1.0
+                        ],
+                        "rect": [
+                            150,
+                            80,
+                            327,
+                            40
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                150.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                80.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "label1",
+                "scripts": []
+            },
+            {
+                "components": {
+                    "COLLISION": {
+                        "rect": [
+                            40,
+                            40,
+                            40,
+                            40
+                        ],
+                        "xOffset": 0,
+                        "yOffset": 0
+                    },
+                    "TEXT": {
+                        "color": [
+                            255,
+                            255,
+                            255,
+                            255
+                        ],
+                        "dynamic": true,
+                        "fontFile": "assets\/fonts\/Jersey15-Regular.ttf",
+                        "size": 40,
+                        "text": "PRESS E TO EDIT LEVEL"
+                    },
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            1.0,
+                            1.0
+                        ],
+                        "rect": [
+                            150,
+                            380,
+                            313,
+                            40
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                150.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                380.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "label2",
+                "scripts": []
+            },
+            {
+                "components": {
+                    "COLLISION": {
+                        "rect": [
+                            40,
+                            40,
+                            40,
+                            40
+                        ],
+                        "xOffset": 0,
+                        "yOffset": 0
+                    },
+                    "TEXT": {
+                        "color": [
+                            255,
+                            255,
+                            255,
+                            255
+                        ],
+                        "dynamic": true,
+                        "fontFile": "assets\/fonts\/Jersey15-Regular.ttf",
+                        "size": 40,
+                        "text": "Press Q to Quit"
+                    },
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            1.0,
+                            1.0
+                        ],
+                        "rect": [
+                            200,
+                            420,
+                            223,
+                            40
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                200.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                420.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "label3",
+                "scripts": []
+            }
+        ],
+        "treeNodes": [
+            {
+                "name": "menu",
+                "objName": "menu",
+                "parent": 0
+            },
+            {
+                "name": "label3",
+                "objName": "label3",
+                "parent": 0
+            },
+            {
+                "name": "label1",
+                "objName": "label1",
+                "parent": 0
+            },
+            {
+                "name": "title",
+                "objName": "title",
+                "parent": 0
+            },
+            {
+                "name": "button",
+                "objName": "button",
+                "parent": 0
+            },
+            {
+                "name": "label2",
+                "objName": "label2",
+                "parent": 0
+            }
+        ]
+    },
+    "scripts": [
+        "MenuScript"
+    ]
+}

@@ -1,0 +1,67 @@
+\doxysection{Enemy\+Script Class Reference}
+\hypertarget{classEnemyScript}{}\label{classEnemyScript}\index{EnemyScript@{EnemyScript}}
+Inheritance diagram for Enemy\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEnemyScript}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEnemyScript_a6bd5f1465921cfc8edb1d232553e298d}{this}} (size\+\_\+t owner)
+\item 
+override void \mbox{\hyperlink{classEnemyScript_abdfc42b5a139f2994b1b12aa40b9913c}{Update}} ()
+\item 
+override string \mbox{\hyperlink{classEnemyScript_a27bdfea85b15810527d2e768251ac546}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of this script. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEnemyScript_a88b23df21d3f74c920a92c376e50a96a}\label{classEnemyScript_a88b23df21d3f74c920a92c376e50a96a} 
+Vec2f {\bfseries m\+Vel}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Script that controls basic vertical movement for an enemy \doxylink{classGameObject}{Game\+Object}. Enemy bounces between the top and bottom bounds of the map. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classEnemyScript_a6bd5f1465921cfc8edb1d232553e298d}\label{classEnemyScript_a6bd5f1465921cfc8edb1d232553e298d} 
+\index{EnemyScript@{EnemyScript}!this@{this}}
+\index{this@{this}!EnemyScript@{EnemyScript}}
+\doxysubsubsection{\texorpdfstring{this()}{this()}}
+{\footnotesize\ttfamily Enemy\+Script\+::this (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{owner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs an \doxylink{classEnemyScript}{Enemy\+Script} tied to a \doxylink{classGameObject}{Game\+Object} by ID. Initializes velocity to move downward. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEnemyScript_a27bdfea85b15810527d2e768251ac546}\label{classEnemyScript_a27bdfea85b15810527d2e768251ac546} 
+\index{EnemyScript@{EnemyScript}!GetName@{GetName}}
+\index{GetName@{GetName}!EnemyScript@{EnemyScript}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily override string Enemy\+Script\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the name of this script. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIScript}{IScript}}.
+
+\Hypertarget{classEnemyScript_abdfc42b5a139f2994b1b12aa40b9913c}\label{classEnemyScript_abdfc42b5a139f2994b1b12aa40b9913c} 
+\index{EnemyScript@{EnemyScript}!Update@{Update}}
+\index{Update@{Update}!EnemyScript@{EnemyScript}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Enemy\+Script\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Updates the enemy\textquotesingle{}s vertical movement each frame. Reverses direction upon hitting the top or bottom bounds. 
+
+Implements \mbox{\hyperlink{interfaceIScript}{IScript}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/scripts/enemyscript.\+d\end{DoxyCompactItemize}

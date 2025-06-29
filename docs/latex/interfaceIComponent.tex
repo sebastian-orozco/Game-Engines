@@ -1,0 +1,107 @@
+\doxysection{IComponent Interface Reference}
+\hypertarget{interfaceIComponent}{}\label{interfaceIComponent}\index{IComponent@{IComponent}}
+
+
+Interface for all components in the engine.  
+
+
+Inheritance diagram for IComponent\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.581921cm]{interfaceIComponent}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceIComponent_a2172e40455944e07650d7307aedad28d}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the component every frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceIComponent_ab5b5737d53e75a42dca835c87552e4d4}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}r)
+\begin{DoxyCompactList}\small\item\em Renders the component to the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceIComponent_aed75610139a5e82b1e8b80fda5d54207}{load\+From\+JSON}} (JSONValue j)
+\begin{DoxyCompactList}\small\item\em Loads component data from a JSON object. \end{DoxyCompactList}\item 
+JSONValue \mbox{\hyperlink{interfaceIComponent_af0d0ab3f7fe3e570052e2055b6a5c673}{to\+JSON}} ()
+\begin{DoxyCompactList}\small\item\em Serializes the component to JSON. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interfaceIComponent_a676e9ba9618ffc6d42afed07ddedf3aa}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name/type of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for all components in the engine. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfaceIComponent_a676e9ba9618ffc6d42afed07ddedf3aa}\label{interfaceIComponent_a676e9ba9618ffc6d42afed07ddedf3aa} 
+\index{IComponent@{IComponent}!GetName@{GetName}}
+\index{GetName@{GetName}!IComponent@{IComponent}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily string IComponent\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the name/type of the component. 
+
+
+
+Implemented in \mbox{\hyperlink{classComponentTexture_a1042276d2117ef48816285ee05d32c9f}{Component\+Texture}}, \mbox{\hyperlink{classComponentCollision_a6c0f681843ee7da32ae1d550dd835986}{Component\+Collision}}, \mbox{\hyperlink{classComponentTransform_aa3fc4cfc46ba37588166a0dfd2a088c2}{Component\+Transform}}, and \mbox{\hyperlink{classComponentAnimatedTexture_a5ff9c89ef4f73325398d49097bf184df}{Component\+Animated\+Texture}}.
+
+\Hypertarget{interfaceIComponent_aed75610139a5e82b1e8b80fda5d54207}\label{interfaceIComponent_aed75610139a5e82b1e8b80fda5d54207} 
+\index{IComponent@{IComponent}!loadFromJSON@{loadFromJSON}}
+\index{loadFromJSON@{loadFromJSON}!IComponent@{IComponent}}
+\doxysubsubsection{\texorpdfstring{loadFromJSON()}{loadFromJSON()}}
+{\footnotesize\ttfamily void IComponent\+::load\+From\+JSON (\begin{DoxyParamCaption}\item[{JSONValue}]{j }\end{DoxyParamCaption})}
+
+
+
+Loads component data from a JSON object. 
+
+
+
+Implemented in \mbox{\hyperlink{classComponentTexture_aedd4888047f7a95b65fdc0cc8a4b6d73}{Component\+Texture}}, \mbox{\hyperlink{classComponentCollision_ae4c0d01ce0123d08ce8937817aba0f1b}{Component\+Collision}}, \mbox{\hyperlink{classComponentTransform_adb019b3c321b751ffe4fa92776e453bb}{Component\+Transform}}, and \mbox{\hyperlink{classComponentAnimatedTexture_a6bff1c3f99f029eed4cebb1114b95959}{Component\+Animated\+Texture}}.
+
+\Hypertarget{interfaceIComponent_ab5b5737d53e75a42dca835c87552e4d4}\label{interfaceIComponent_ab5b5737d53e75a42dca835c87552e4d4} 
+\index{IComponent@{IComponent}!Render@{Render}}
+\index{Render@{Render}!IComponent@{IComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void IComponent\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{r }\end{DoxyParamCaption})}
+
+
+
+Renders the component to the screen. 
+
+
+
+Implemented in \mbox{\hyperlink{classComponentTexture_a5e00255303b878ef5774e43437633cd4}{Component\+Texture}}, \mbox{\hyperlink{classComponentCollision_a92fe8814948a110f963a53f65aba9098}{Component\+Collision}}, \mbox{\hyperlink{classComponentTransform_a2f6c2ebb1d69e380bbc95ac05beacbfd}{Component\+Transform}}, and \mbox{\hyperlink{classComponentAnimatedTexture_a9e83f801f8237af515207c78b4c17886}{Component\+Animated\+Texture}}.
+
+\Hypertarget{interfaceIComponent_af0d0ab3f7fe3e570052e2055b6a5c673}\label{interfaceIComponent_af0d0ab3f7fe3e570052e2055b6a5c673} 
+\index{IComponent@{IComponent}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!IComponent@{IComponent}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}}
+{\footnotesize\ttfamily JSONValue IComponent\+::to\+JSON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Serializes the component to JSON. 
+
+
+
+Implemented in \mbox{\hyperlink{classComponentTexture_ae230385b2c0520198c5c2300da4ebde8}{Component\+Texture}}, \mbox{\hyperlink{classComponentCollision_abf1dcc53c86c3d3d080dfdffcc551447}{Component\+Collision}}, \mbox{\hyperlink{classComponentTransform_a38c12748015e0a604b890afe9114ab8b}{Component\+Transform}}, and \mbox{\hyperlink{classComponentAnimatedTexture_af9e78c1825c3281ce364bba79bb08cb2}{Component\+Animated\+Texture}}.
+
+\Hypertarget{interfaceIComponent_a2172e40455944e07650d7307aedad28d}\label{interfaceIComponent_a2172e40455944e07650d7307aedad28d} 
+\index{IComponent@{IComponent}!Update@{Update}}
+\index{Update@{Update}!IComponent@{IComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void IComponent\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the component every frame. 
+
+
+
+Implemented in \mbox{\hyperlink{classComponentTexture_afa6df3eecf04335a887baba734a1214b}{Component\+Texture}}, \mbox{\hyperlink{classComponentCollision_a8eb05f65f7c2c66f216e2000e657b85f}{Component\+Collision}}, \mbox{\hyperlink{classComponentTransform_ab743dbbeabec8b768a403c2b5ace8884}{Component\+Transform}}, and \mbox{\hyperlink{classComponentAnimatedTexture_a2c3db21b6d371547d9107c06b9fc4a78}{Component\+Animated\+Texture}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/component.\+d\end{DoxyCompactItemize}

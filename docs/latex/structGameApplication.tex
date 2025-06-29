@@ -1,0 +1,51 @@
+\doxysection{Game\+Application Struct Reference}
+\hypertarget{structGameApplication}{}\label{structGameApplication}\index{GameApplication@{GameApplication}}
+
+
+\doxylink{structGameApplication}{Game\+Application} encapsulates the main game loop, scenes, and rendering system.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structGameApplication_a5d21a0eb3f441577cae61fdb3dcf943f}\label{structGameApplication_a5d21a0eb3f441577cae61fdb3dcf943f} 
+{\bfseries this} (string title)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structGameApplication}{Game\+Application}, initializes SDL, audio, and loads the main scene. \end{DoxyCompactList}\item 
+\Hypertarget{structGameApplication_a587f67ea3b8d8dd4950163608c9189bb}\label{structGameApplication_a587f67ea3b8d8dd4950163608c9189bb} 
+void {\bfseries Input} ()
+\begin{DoxyCompactList}\small\item\em Polls input events and forwards to the active scene. \end{DoxyCompactList}\item 
+\Hypertarget{structGameApplication_a8879191af8b4f27f1e4433d36db473d8}\label{structGameApplication_a8879191af8b4f27f1e4433d36db473d8} 
+void {\bfseries Update} ()
+\begin{DoxyCompactList}\small\item\em Updates the current scene and handles scene transitions. \end{DoxyCompactList}\item 
+\Hypertarget{structGameApplication_abaa232c34522e02e667937bcc88fd16a}\label{structGameApplication_abaa232c34522e02e667937bcc88fd16a} 
+void {\bfseries Render} ()
+\begin{DoxyCompactList}\small\item\em Clears the screen and renders the active scene. \end{DoxyCompactList}\item 
+\Hypertarget{structGameApplication_a084a32d959f0fffa195c628e9135c251}\label{structGameApplication_a084a32d959f0fffa195c628e9135c251} 
+void {\bfseries Advance\+Frame} ()
+\begin{DoxyCompactList}\small\item\em Processes a single frame of input, update, and render. \end{DoxyCompactList}\item 
+\Hypertarget{structGameApplication_a6a248734231421a03d6a24b647b8c5b9}\label{structGameApplication_a6a248734231421a03d6a24b647b8c5b9} 
+void {\bfseries Run\+Loop} ()
+\begin{DoxyCompactList}\small\item\em Main game loop with frame capping logic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structGameApplication_aff60438875c7218dca59fb81c5d5f836}\label{structGameApplication_aff60438875c7218dca59fb81c5d5f836} 
+\mbox{\hyperlink{structScene}{Scene}}\mbox{[}$\,$\mbox{]} {\bfseries m\+Scenes}
+\item 
+\Hypertarget{structGameApplication_a5b66cc1dfa827f5cbf643c2ca53cc880}\label{structGameApplication_a5b66cc1dfa827f5cbf643c2ca53cc880} 
+\mbox{\hyperlink{structScene}{Scene}} {\bfseries m\+Active\+Scene}
+\item 
+\Hypertarget{structGameApplication_a84af0396b9d3700b17861fd4535762c0}\label{structGameApplication_a84af0396b9d3700b17861fd4535762c0} 
+bool {\bfseries m\+Game\+Running} =true
+\item 
+\Hypertarget{structGameApplication_a23382968a1d45e0e7e0ed8e732811adb}\label{structGameApplication_a23382968a1d45e0e7e0ed8e732811adb} 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} {\bfseries m\+Renderer} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{structGameApplication}{Game\+Application} encapsulates the main game loop, scenes, and rendering system. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/\mbox{\hyperlink{gameapplication_8d}{gameapplication.\+d}}\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+{
+"filepath":"./images/assets/images/enemy_projectile_spritesheet.png",
+  "format":{
+    	"width"			: 128,
+    	"height"		: 32,
+    	"tileWidth"		: 32,
+    	"tileHeight"	: 32
+  },
+  "frames":{
+    	"idle": [0,1,2,3]
+  }
+}
+

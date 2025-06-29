@@ -1,0 +1,12 @@
+{
+    "filepath":"./images/assets/Automatic_Barrier_1_16x16.json",
+      "format":{
+            "width"		: 1120,
+            "height"		: 80,
+            "tileWidth"	: 80,
+            "tileHeight"	: 80
+      },
+      "frames":{
+            "spin1": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+      }
+}

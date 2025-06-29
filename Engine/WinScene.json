@@ -1,0 +1,347 @@
+{
+    "gameState": {
+        "floats": {},
+        "ints": {},
+        "strings": {}
+    },
+    "sceneTree": {
+        "objects": [
+            {
+                "components": {
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            0.0,
+                            0.0
+                        ],
+                        "filename": "assets\/images\/bg_win.png",
+                        "rect": [
+                            0,
+                            0,
+                            640,
+                            480
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "winScreen",
+                "scripts": []
+            },
+            {
+                "components": {
+                    "COLLISION": {
+                        "rect": [
+                            40,
+                            40,
+                            40,
+                            40
+                        ],
+                        "xOffset": 0,
+                        "yOffset": 0
+                    },
+                    "TEXT": {
+                        "color": [
+                            255,
+                            255,
+                            255,
+                            255
+                        ],
+                        "dynamic": true,
+                        "fontFile": "assets\/fonts\/Jersey15-Regular.ttf",
+                        "size": 36,
+                        "text": "Congratulations! You Escaped the Museum!"
+                    },
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            1.0,
+                            1.0
+                        ],
+                        "rect": [
+                            37,
+                            60,
+                            574,
+                            36
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                37.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                60.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "label1",
+                "scripts": []
+            },
+            {
+                "components": {
+                    "COLLISION": {
+                        "rect": [
+                            40,
+                            40,
+                            40,
+                            40
+                        ],
+                        "xOffset": 0,
+                        "yOffset": 0
+                    },
+                    "TEXT": {
+                        "color": [
+                            255,
+                            255,
+                            255,
+                            255
+                        ],
+                        "dynamic": true,
+                        "fontFile": "assets\/fonts\/Jersey15-Regular.ttf",
+                        "size": 40,
+                        "text": "Press Space to Play Again"
+                    },
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            1.0,
+                            1.0
+                        ],
+                        "rect": [
+                            140,
+                            380,
+                            387,
+                            40
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                140.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                380.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "label2",
+                "scripts": []
+            },
+            {
+                "components": {
+                    "COLLISION": {
+                        "rect": [
+                            40,
+                            40,
+                            40,
+                            40
+                        ],
+                        "xOffset": 0,
+                        "yOffset": 0
+                    },
+                    "TEXT": {
+                        "color": [
+                            255,
+                            255,
+                            255,
+                            255
+                        ],
+                        "dynamic": true,
+                        "fontFile": "assets\/fonts\/Jersey15-Regular.ttf",
+                        "size": 40,
+                        "text": "Press Q to Quit"
+                    },
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            1.0,
+                            1.0
+                        ],
+                        "rect": [
+                            200,
+                            420,
+                            223,
+                            40
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                200.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                420.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "label3",
+                "scripts": []
+            }
+        ],
+        "treeNodes": [
+            {
+                "name": "label1",
+                "objName": "label1",
+                "parent": 0
+            },
+            {
+                "name": "winScreen",
+                "objName": "winScreen",
+                "parent": 0
+            },
+            {
+                "name": "label3",
+                "objName": "label3",
+                "parent": 0
+            },
+            {
+                "name": "label2",
+                "objName": "label2",
+                "parent": 0
+            }
+        ]
+    },
+    "scripts": [
+        "WinScreenScript"
+    ]
+}

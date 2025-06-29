@@ -1,0 +1,10 @@
+{
+    "scenes": {
+        "MainLevel": "testTile.json",
+        "win": "WinScene.json",
+        "gameOver": "LoseScene.json",
+        "Menu": "menu.json",
+        "Intro": "Intro.json"
+    },
+    "active": "Intro"
+}

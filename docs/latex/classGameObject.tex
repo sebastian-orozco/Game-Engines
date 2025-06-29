@@ -1,0 +1,64 @@
+\doxysection{Game\+Object Class Reference}
+\hypertarget{classGameObject}{}\label{classGameObject}\index{GameObject@{GameObject}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classGameObject_aa9c5af1c575fc17eabb733bf21f556c4}\label{classGameObject_aa9c5af1c575fc17eabb733bf21f556c4} 
+{\bfseries this} (string name)
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{classGameObject}{Game\+Object} with a unique ID and name. \end{DoxyCompactList}\item 
+\Hypertarget{classGameObject_adfe9e516d72742bf80659fa205a49d32}\label{classGameObject_adfe9e516d72742bf80659fa205a49d32} 
+void {\bfseries load\+From\+JSON} (JSONValue j)
+\begin{DoxyCompactList}\small\item\em Loads components and scripts for this object from a JSON value. \end{DoxyCompactList}\item 
+\Hypertarget{classGameObject_ad668d0640b929319ed07bdf17dd9d218}\label{classGameObject_ad668d0640b929319ed07bdf17dd9d218} 
+JSONValue {\bfseries to\+JSON} ()
+\begin{DoxyCompactList}\small\item\em Serializes the object to JSON, including components and scripts. \end{DoxyCompactList}\item 
+\Hypertarget{classGameObject_a0a704586f5b436a956c0fb96bbd97af0}\label{classGameObject_a0a704586f5b436a956c0fb96bbd97af0} 
+string {\bfseries Get\+Name} () const
+\begin{DoxyCompactList}\small\item\em Returns the name of the object. \end{DoxyCompactList}\item 
+\Hypertarget{classGameObject_aa419325e778acfc02d4a317aaacce1fa}\label{classGameObject_aa419325e778acfc02d4a317aaacce1fa} 
+size\+\_\+t {\bfseries Get\+ID} () const
+\begin{DoxyCompactList}\small\item\em Returns the ID of the object. \end{DoxyCompactList}\item 
+\Hypertarget{classGameObject_a1bd14aa169f501f94f1721943d716535}\label{classGameObject_a1bd14aa169f501f94f1721943d716535} 
+void {\bfseries Update} ()
+\begin{DoxyCompactList}\small\item\em Updates this object (empty by default, overridden elsewhere). \end{DoxyCompactList}\item 
+\Hypertarget{classGameObject_a3ab03f41244c41df8b135e199d865901}\label{classGameObject_a3ab03f41244c41df8b135e199d865901} 
+\mbox{\hyperlink{interfaceIComponent}{IComponent}} {\bfseries Get\+Component} (Component\+Type type)
+\begin{DoxyCompactList}\small\item\em Retrieves a component by its type. \end{DoxyCompactList}\item 
+\Hypertarget{classGameObject_a9f61c03c9712ad1649678c34101014c1}\label{classGameObject_a9f61c03c9712ad1649678c34101014c1} 
+void {\bfseries Add\+Component} (Component\+Type T)(\mbox{\hyperlink{interfaceIComponent}{IComponent}} component)
+\begin{DoxyCompactList}\small\item\em Adds a component to the object under a specific type key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classGameObject_aaaf8d91c90332a3258edf0f6ff7f2580}\label{classGameObject_aaaf8d91c90332a3258edf0f6ff7f2580} 
+static \mbox{\hyperlink{classGameObject}{Game\+Object}} {\bfseries Get\+Game\+Object} (string name)
+\begin{DoxyCompactList}\small\item\em Retrieves a \doxylink{classGameObject}{Game\+Object} by name. \end{DoxyCompactList}\item 
+\Hypertarget{classGameObject_acc54a9223e133b2cae7c98005a67e97c}\label{classGameObject_acc54a9223e133b2cae7c98005a67e97c} 
+static \mbox{\hyperlink{classGameObject}{Game\+Object}} {\bfseries Get\+Game\+Object} (size\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em Retrieves a \doxylink{classGameObject}{Game\+Object} by ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classGameObject_a722b5547e10c2c23523c447b1bbbdd83}\label{classGameObject_a722b5547e10c2c23523c447b1bbbdd83} 
+\mbox{\hyperlink{interfaceIScript}{IScript}}\mbox{[}$\,$\mbox{]} {\bfseries m\+Scripts}
+\begin{DoxyCompactList}\small\item\em List of scripts attached to the object. \end{DoxyCompactList}\item 
+\Hypertarget{classGameObject_aebb794acad56cbfe179fb20dfd674e35}\label{classGameObject_aebb794acad56cbfe179fb20dfd674e35} 
+\mbox{\hyperlink{interfaceIComponent}{IComponent}}\mbox{[}Component\+Type\mbox{]} {\bfseries m\+Components}
+\begin{DoxyCompactList}\small\item\em Map of components by type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classGameObject_a5c52eabe47103b90b85deb28fcc51c5a}\label{classGameObject_a5c52eabe47103b90b85deb28fcc51c5a} 
+static \mbox{\hyperlink{classGameObject}{Game\+Object}}\mbox{[}string\mbox{]} {\bfseries s\+Game\+Objects}
+\begin{DoxyCompactList}\small\item\em Global map of Game\+Objects by name. \end{DoxyCompactList}\item 
+\Hypertarget{classGameObject_ab504c357258e8289c5bde08f1a223eaf}\label{classGameObject_ab504c357258e8289c5bde08f1a223eaf} 
+static string\mbox{[}size\+\_\+t\mbox{]} {\bfseries s\+Game\+Objects\+Name\+To\+ID}
+\begin{DoxyCompactList}\small\item\em Reverse map of \doxylink{classGameObject}{Game\+Object} IDs to names. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a single object in the game world. Each \doxylink{classGameObject}{Game\+Object} has a name, ID, a set of components, and attached scripts. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/gameobject.\+d\end{DoxyCompactItemize}

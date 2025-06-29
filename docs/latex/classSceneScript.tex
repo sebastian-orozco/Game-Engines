@@ -1,0 +1,67 @@
+\doxysection{Scene\+Script Class Reference}
+\hypertarget{classSceneScript}{}\label{classSceneScript}\index{SceneScript@{SceneScript}}
+
+
+Script that runs logic for the scene, including player-\/enemy collision and transitions.  
+
+
+Inheritance diagram for Scene\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSceneScript}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classSceneScript_aadc432752221e2a226849356fd2466d7}\label{classSceneScript_aadc432752221e2a226849356fd2466d7} 
+{\bfseries this} (\mbox{\hyperlink{structScene}{Scene}} \texorpdfstring{$\ast$}{*}scene)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classSceneScript}{Scene\+Script} associated with a given scene. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classSceneScript_a14d17949ea547ba8b1c8a25537920b48}{Update}} ()
+\item 
+override string \mbox{\hyperlink{classSceneScript_ab6d011dfcc9ea4b965ed1291e75d31d3}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of this script. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classSceneScript_adb402c5a90cd02070063b0d74f9b7019}\label{classSceneScript_adb402c5a90cd02070063b0d74f9b7019} 
+\mbox{\hyperlink{structScene}{Scene}} \texorpdfstring{$\ast$}{*} {\bfseries m\+Scene}
+\item 
+\Hypertarget{classSceneScript_a05a83a829fa2da563db8f2cf5a0b2db2}\label{classSceneScript_a05a83a829fa2da563db8f2cf5a0b2db2} 
+uint {\bfseries m\+Start\+Time}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Script that runs logic for the scene, including player-\/enemy collision and transitions. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSceneScript_ab6d011dfcc9ea4b965ed1291e75d31d3}\label{classSceneScript_ab6d011dfcc9ea4b965ed1291e75d31d3} 
+\index{SceneScript@{SceneScript}!GetName@{GetName}}
+\index{GetName@{GetName}!SceneScript@{SceneScript}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily override string Scene\+Script\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the name of this script. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIScript}{IScript}}.
+
+\Hypertarget{classSceneScript_a14d17949ea547ba8b1c8a25537920b48}\label{classSceneScript_a14d17949ea547ba8b1c8a25537920b48} 
+\index{SceneScript@{SceneScript}!Update@{Update}}
+\index{Update@{Update}!SceneScript@{SceneScript}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Scene\+Script\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Updates the script logic every frame. Checks for collisions between the player and enemies after a delay, and triggers a death animation and scene transition. 
+
+Implements \mbox{\hyperlink{interfaceIScript}{IScript}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/scripts/scenescript.\+d\end{DoxyCompactItemize}

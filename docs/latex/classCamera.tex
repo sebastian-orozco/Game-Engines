@@ -1,0 +1,62 @@
+\doxysection{Camera Class Reference}
+\hypertarget{classCamera}{}\label{classCamera}\index{Camera@{Camera}}
+
+
+Represents a camera in the scene, with a transformation used to position and track the view.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCamera_ab6230809114600721375559ab41a12df}\label{classCamera_ab6230809114600721375559ab41a12df} 
+{\bfseries this} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new camera with a default transformation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a17666c4b47e326ca260aeaf33a1c5dae}{Position\+Camera}} (float x, float y)
+\item 
+Vec2f \mbox{\hyperlink{classCamera_aefab52435a52855720be8c50ef7b4976}{Get\+Position}} ()
+\item 
+float \mbox{\hyperlink{classCamera_a39249a2015d038bfa5e3c9c2b3e92261}{Clamp}} (float val, float min, float max)
+\item 
+void \mbox{\hyperlink{classCamera_a48cc6daa9812eb858fc984643c2c4386}{Center\+On\+Player\+Clamped}} (Vec2f player\+Pos, float cam\+Width, float cam\+Height, float map\+Width, float map\+Height)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCamera_ad503571655d9f9c49da425c0080f720a}\label{classCamera_ad503571655d9f9c49da425c0080f720a} 
+\mbox{\hyperlink{classComponentTransform}{Component\+Transform}} {\bfseries m\+Transform}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a camera in the scene, with a transformation used to position and track the view. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCamera_a48cc6daa9812eb858fc984643c2c4386}\label{classCamera_a48cc6daa9812eb858fc984643c2c4386} 
+\index{Camera@{Camera}!CenterOnPlayerClamped@{CenterOnPlayerClamped}}
+\index{CenterOnPlayerClamped@{CenterOnPlayerClamped}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{CenterOnPlayerClamped()}{CenterOnPlayerClamped()}}
+{\footnotesize\ttfamily void Camera\+::\+Center\+On\+Player\+Clamped (\begin{DoxyParamCaption}\item[{Vec2f}]{player\+Pos,  }\item[{float}]{cam\+Width,  }\item[{float}]{cam\+Height,  }\item[{float}]{map\+Width,  }\item[{float}]{map\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Repositions the camera to center on the player while staying within map bounds. Params\+: player\+Pos = world position of the player cam\+Width = width of camera viewport cam\+Height = height of camera viewport map\+Width = total width of the map map\+Height = total height of the map \Hypertarget{classCamera_a39249a2015d038bfa5e3c9c2b3e92261}\label{classCamera_a39249a2015d038bfa5e3c9c2b3e92261} 
+\index{Camera@{Camera}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}}
+{\footnotesize\ttfamily float Camera\+::\+Clamp (\begin{DoxyParamCaption}\item[{float}]{val,  }\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clamps a value between a minimum and maximum. Params\+: val = value to clamp min = lower bound max = upper bound Returns\+: Clamped value \Hypertarget{classCamera_aefab52435a52855720be8c50ef7b4976}\label{classCamera_aefab52435a52855720be8c50ef7b4976} 
+\index{Camera@{Camera}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily Vec2f Camera\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the camera\textquotesingle{}s current world position. Returns\+: A Vec2f representing the camera\textquotesingle{}s translation. \Hypertarget{classCamera_a17666c4b47e326ca260aeaf33a1c5dae}\label{classCamera_a17666c4b47e326ca260aeaf33a1c5dae} 
+\index{Camera@{Camera}!PositionCamera@{PositionCamera}}
+\index{PositionCamera@{PositionCamera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{PositionCamera()}{PositionCamera()}}
+{\footnotesize\ttfamily void Camera\+::\+Position\+Camera (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the camera\textquotesingle{}s position. Params\+: x = x-\/coordinate of camera center y = y-\/coordinate of camera center 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/\mbox{\hyperlink{gameapplication_8d}{gameapplication.\+d}}\end{DoxyCompactItemize}

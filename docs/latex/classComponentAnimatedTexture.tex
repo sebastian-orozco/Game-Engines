@@ -1,0 +1,155 @@
+\doxysection{Component\+Animated\+Texture Class Reference}
+\hypertarget{classComponentAnimatedTexture}{}\label{classComponentAnimatedTexture}\index{ComponentAnimatedTexture@{ComponentAnimatedTexture}}
+
+
+A component for managing sprite animations using a texture atlas and metadata.  
+
+
+Inheritance diagram for Component\+Animated\+Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classComponentAnimatedTexture}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structComponentAnimatedTexture_1_1Frame}{Frame}}
+\begin{DoxyCompactList}\small\item\em Store an individual \doxylink{structComponentAnimatedTexture_1_1Frame}{Frame} for an animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classComponentAnimatedTexture_a0f33847fcb081001863d0ee60fd938ac}\label{classComponentAnimatedTexture_a0f33847fcb081001863d0ee60fd938ac} 
+{\bfseries this} (size\+\_\+t owner)
+\begin{DoxyCompactList}\small\item\em Hold a copy of the texture that is referenced. \end{DoxyCompactList}\item 
+\Hypertarget{classComponentAnimatedTexture_a9025ef13a32764ade8727643839be645}\label{classComponentAnimatedTexture_a9025ef13a32764ade8727643839be645} 
+bool {\bfseries Set\+Texture} (string filename)
+\begin{DoxyCompactList}\small\item\em Loads metadata and connects to associated texture/transform components. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classComponentAnimatedTexture_a2c3db21b6d371547d9107c06b9fc4a78}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the component every frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComponentAnimatedTexture_a117ef6b212f0739925ab45d28183c077}{Load\+Meta\+Data}} (string filename)
+\item 
+\Hypertarget{classComponentAnimatedTexture_a8f73c996d8dd7b4f3dc5a68b473779af}\label{classComponentAnimatedTexture_a8f73c996d8dd7b4f3dc5a68b473779af} 
+void {\bfseries Change\+Animation\+Sequence} (string name)
+\begin{DoxyCompactList}\small\item\em Switches to a new animation sequence by name. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classComponentAnimatedTexture_a9e83f801f8237af515207c78b4c17886}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}r)
+\item 
+override void \mbox{\hyperlink{classComponentAnimatedTexture_a6bff1c3f99f029eed4cebb1114b95959}{load\+From\+JSON}} (JSONValue j)
+\begin{DoxyCompactList}\small\item\em Loads component data from a JSON object. \end{DoxyCompactList}\item 
+override JSONValue \mbox{\hyperlink{classComponentAnimatedTexture_af9e78c1825c3281ce364bba79bb08cb2}{to\+JSON}} ()
+\begin{DoxyCompactList}\small\item\em Serializes the component to JSON. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classComponentAnimatedTexture_a5ff9c89ef4f73325398d49097bf184df}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name/type of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classComponentAnimatedTexture_a24e1d1b057ebc6f12ca5c4ebd5a4decd}\label{classComponentAnimatedTexture_a24e1d1b057ebc6f12ca5c4ebd5a4decd} 
+string {\bfseries m\+Filename}
+\item 
+\Hypertarget{classComponentAnimatedTexture_a4aaff85cae997b2275fd2db539674e09}\label{classComponentAnimatedTexture_a4aaff85cae997b2275fd2db539674e09} 
+\mbox{\hyperlink{structComponentAnimatedTexture_1_1Frame}{Frame}}\mbox{[}$\,$\mbox{]} {\bfseries m\+Frames}
+\item 
+\Hypertarget{classComponentAnimatedTexture_a669207dc85e25a2a42b0e51e3a642a92}\label{classComponentAnimatedTexture_a669207dc85e25a2a42b0e51e3a642a92} 
+long\mbox{[}$\,$\mbox{]}\mbox{[}string\mbox{]} {\bfseries m\+Frame\+Numbers}
+\item 
+\Hypertarget{classComponentAnimatedTexture_a348299b9eb8d5f9be0ca990e18d70ab8}\label{classComponentAnimatedTexture_a348299b9eb8d5f9be0ca990e18d70ab8} 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} {\bfseries m\+Renderer\+Ref}
+\item 
+\Hypertarget{classComponentAnimatedTexture_a8a5972c3b6cf345379cf249bb389c9b1}\label{classComponentAnimatedTexture_a8a5972c3b6cf345379cf249bb389c9b1} 
+\mbox{\hyperlink{classComponentTexture}{Component\+Texture}} {\bfseries m\+Texture\+Ref}
+\item 
+\Hypertarget{classComponentAnimatedTexture_a5c767130ab523421867b36f78a25bed8}\label{classComponentAnimatedTexture_a5c767130ab523421867b36f78a25bed8} 
+\mbox{\hyperlink{classComponentTransform}{Component\+Transform}} {\bfseries m\+Transform\+Ref}
+\item 
+\Hypertarget{classComponentAnimatedTexture_a5673cfec9dfb8d854677908fc8d7088e}\label{classComponentAnimatedTexture_a5673cfec9dfb8d854677908fc8d7088e} 
+string {\bfseries m\+Current\+Animation\+Name}
+\item 
+\Hypertarget{classComponentAnimatedTexture_a73c68a33aa8842b34da1dd68523db0f3}\label{classComponentAnimatedTexture_a73c68a33aa8842b34da1dd68523db0f3} 
+long {\bfseries m\+Current\+Frame\+Playing}
+\item 
+\Hypertarget{classComponentAnimatedTexture_add3318ea22c1973e6716c97284f85c19}\label{classComponentAnimatedTexture_add3318ea22c1973e6716c97284f85c19} 
+long {\bfseries m\+Last\+Frame\+In\+Sequence}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component for managing sprite animations using a texture atlas and metadata. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classComponentAnimatedTexture_a5ff9c89ef4f73325398d49097bf184df}\label{classComponentAnimatedTexture_a5ff9c89ef4f73325398d49097bf184df} 
+\index{ComponentAnimatedTexture@{ComponentAnimatedTexture}!GetName@{GetName}}
+\index{GetName@{GetName}!ComponentAnimatedTexture@{ComponentAnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily override string Component\+Animated\+Texture\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the name/type of the component. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_a676e9ba9618ffc6d42afed07ddedf3aa}{IComponent}}.
+
+\Hypertarget{classComponentAnimatedTexture_a6bff1c3f99f029eed4cebb1114b95959}\label{classComponentAnimatedTexture_a6bff1c3f99f029eed4cebb1114b95959} 
+\index{ComponentAnimatedTexture@{ComponentAnimatedTexture}!loadFromJSON@{loadFromJSON}}
+\index{loadFromJSON@{loadFromJSON}!ComponentAnimatedTexture@{ComponentAnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{loadFromJSON()}{loadFromJSON()}}
+{\footnotesize\ttfamily override void Component\+Animated\+Texture\+::load\+From\+JSON (\begin{DoxyParamCaption}\item[{JSONValue}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads component data from a JSON object. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_aed75610139a5e82b1e8b80fda5d54207}{IComponent}}.
+
+\Hypertarget{classComponentAnimatedTexture_a117ef6b212f0739925ab45d28183c077}\label{classComponentAnimatedTexture_a117ef6b212f0739925ab45d28183c077} 
+\index{ComponentAnimatedTexture@{ComponentAnimatedTexture}!LoadMetaData@{LoadMetaData}}
+\index{LoadMetaData@{LoadMetaData}!ComponentAnimatedTexture@{ComponentAnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{LoadMetaData()}{LoadMetaData()}}
+{\footnotesize\ttfamily void Component\+Animated\+Texture\+::\+Load\+Meta\+Data (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Load a data file that describes meta-\/data about animations stored in a single file. In practice, this could be a public member function, so you can otherwise load new meta data as needed. \Hypertarget{classComponentAnimatedTexture_a9e83f801f8237af515207c78b4c17886}\label{classComponentAnimatedTexture_a9e83f801f8237af515207c78b4c17886} 
+\index{ComponentAnimatedTexture@{ComponentAnimatedTexture}!Render@{Render}}
+\index{Render@{Render}!ComponentAnimatedTexture@{ComponentAnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily override void Component\+Animated\+Texture\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Play an animation based on the name of the animation sequence specified in the data file. 
+
+Implements \mbox{\hyperlink{interfaceIComponent_ab5b5737d53e75a42dca835c87552e4d4}{IComponent}}.
+
+\Hypertarget{classComponentAnimatedTexture_af9e78c1825c3281ce364bba79bb08cb2}\label{classComponentAnimatedTexture_af9e78c1825c3281ce364bba79bb08cb2} 
+\index{ComponentAnimatedTexture@{ComponentAnimatedTexture}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!ComponentAnimatedTexture@{ComponentAnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}}
+{\footnotesize\ttfamily override JSONValue Component\+Animated\+Texture\+::to\+JSON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Serializes the component to JSON. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_af0d0ab3f7fe3e570052e2055b6a5c673}{IComponent}}.
+
+\Hypertarget{classComponentAnimatedTexture_a2c3db21b6d371547d9107c06b9fc4a78}\label{classComponentAnimatedTexture_a2c3db21b6d371547d9107c06b9fc4a78} 
+\index{ComponentAnimatedTexture@{ComponentAnimatedTexture}!Update@{Update}}
+\index{Update@{Update}!ComponentAnimatedTexture@{ComponentAnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Component\+Animated\+Texture\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the component every frame. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_a2172e40455944e07650d7307aedad28d}{IComponent}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/component.\+d\end{DoxyCompactItemize}

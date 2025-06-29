@@ -1,0 +1,137 @@
+\doxysection{Component\+Transform Class Reference}
+\hypertarget{classComponentTransform}{}\label{classComponentTransform}\index{ComponentTransform@{ComponentTransform}}
+
+
+A transformation component supporting translation, scaling, and rotation via 3x3 matrices.  
+
+
+Inheritance diagram for Component\+Transform\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classComponentTransform}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classComponentTransform_a7f9e858f1d32abfdc2c664cf829af04d}\label{classComponentTransform_a7f9e858f1d32abfdc2c664cf829af04d} 
+{\bfseries this} (size\+\_\+t owner)
+\item 
+override void \mbox{\hyperlink{classComponentTransform_ab743dbbeabec8b768a403c2b5ace8884}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the component every frame. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classComponentTransform_a2f6c2ebb1d69e380bbc95ac05beacbfd}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}r)
+\begin{DoxyCompactList}\small\item\em Renders the component to the screen. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classComponentTransform_adb019b3c321b751ffe4fa92776e453bb}{load\+From\+JSON}} (JSONValue j)
+\begin{DoxyCompactList}\small\item\em Loads component data from a JSON object. \end{DoxyCompactList}\item 
+override JSONValue \mbox{\hyperlink{classComponentTransform_a38c12748015e0a604b890afe9114ab8b}{to\+JSON}} ()
+\begin{DoxyCompactList}\small\item\em Serializes the component to JSON. \end{DoxyCompactList}\item 
+\Hypertarget{classComponentTransform_ab56abc2db0ce867ec456e9cb4c19ac51}\label{classComponentTransform_ab56abc2db0ce867ec456e9cb4c19ac51} 
+void {\bfseries Translate} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Applies a translation to the local matrix. \end{DoxyCompactList}\item 
+\Hypertarget{classComponentTransform_ab8d27d48ab2d9edbbd1100f1f4843703}\label{classComponentTransform_ab8d27d48ab2d9edbbd1100f1f4843703} 
+void {\bfseries Scale} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Applies scaling to the local matrix. \end{DoxyCompactList}\item 
+\Hypertarget{classComponentTransform_a185cc30a0c00010fcfdf8e81c6910dc1}\label{classComponentTransform_a185cc30a0c00010fcfdf8e81c6910dc1} 
+void {\bfseries Rotate} (float angle)
+\begin{DoxyCompactList}\small\item\em Applies a rotation to the local matrix. \end{DoxyCompactList}\item 
+\Hypertarget{classComponentTransform_a6c390346edc889ca8e1490e9c8c02c2b}\label{classComponentTransform_a6c390346edc889ca8e1490e9c8c02c2b} 
+Vec2f {\bfseries Get\+Position} ()
+\begin{DoxyCompactList}\small\item\em Returns the object\textquotesingle{}s world position. \end{DoxyCompactList}\item 
+\Hypertarget{classComponentTransform_a6be06c32ed92aec7c81e827954ecaf02}\label{classComponentTransform_a6be06c32ed92aec7c81e827954ecaf02} 
+Vec2f {\bfseries Get\+Scale} ()
+\begin{DoxyCompactList}\small\item\em Returns the object\textquotesingle{}s scale. \end{DoxyCompactList}\item 
+\Hypertarget{classComponentTransform_a7fe0b3f3e6497e11d8d085a553abe19e}\label{classComponentTransform_a7fe0b3f3e6497e11d8d085a553abe19e} 
+float {\bfseries Get\+Angle} ()
+\begin{DoxyCompactList}\small\item\em Returns the object\textquotesingle{}s rotation angle. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classComponentTransform_aa3fc4cfc46ba37588166a0dfd2a088c2}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name/type of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classComponentTransform_a1595a96626780df4c696ecb2d54523e3}\label{classComponentTransform_a1595a96626780df4c696ecb2d54523e3} 
+\mbox{\hyperlink{structmat3}{mat3}} {\bfseries m\+Local\+Matrix}
+\item 
+\Hypertarget{classComponentTransform_a32448dcd7ebffa99dda0f988ccd0cce1}\label{classComponentTransform_a32448dcd7ebffa99dda0f988ccd0cce1} 
+\mbox{\hyperlink{structmat3}{mat3}} {\bfseries m\+World\+Matrix}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A transformation component supporting translation, scaling, and rotation via 3x3 matrices. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classComponentTransform_aa3fc4cfc46ba37588166a0dfd2a088c2}\label{classComponentTransform_aa3fc4cfc46ba37588166a0dfd2a088c2} 
+\index{ComponentTransform@{ComponentTransform}!GetName@{GetName}}
+\index{GetName@{GetName}!ComponentTransform@{ComponentTransform}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily override string Component\+Transform\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the name/type of the component. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_a676e9ba9618ffc6d42afed07ddedf3aa}{IComponent}}.
+
+\Hypertarget{classComponentTransform_adb019b3c321b751ffe4fa92776e453bb}\label{classComponentTransform_adb019b3c321b751ffe4fa92776e453bb} 
+\index{ComponentTransform@{ComponentTransform}!loadFromJSON@{loadFromJSON}}
+\index{loadFromJSON@{loadFromJSON}!ComponentTransform@{ComponentTransform}}
+\doxysubsubsection{\texorpdfstring{loadFromJSON()}{loadFromJSON()}}
+{\footnotesize\ttfamily override void Component\+Transform\+::load\+From\+JSON (\begin{DoxyParamCaption}\item[{JSONValue}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads component data from a JSON object. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_aed75610139a5e82b1e8b80fda5d54207}{IComponent}}.
+
+\Hypertarget{classComponentTransform_a2f6c2ebb1d69e380bbc95ac05beacbfd}\label{classComponentTransform_a2f6c2ebb1d69e380bbc95ac05beacbfd} 
+\index{ComponentTransform@{ComponentTransform}!Render@{Render}}
+\index{Render@{Render}!ComponentTransform@{ComponentTransform}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily override void Component\+Transform\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Renders the component to the screen. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_ab5b5737d53e75a42dca835c87552e4d4}{IComponent}}.
+
+\Hypertarget{classComponentTransform_a38c12748015e0a604b890afe9114ab8b}\label{classComponentTransform_a38c12748015e0a604b890afe9114ab8b} 
+\index{ComponentTransform@{ComponentTransform}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!ComponentTransform@{ComponentTransform}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}}
+{\footnotesize\ttfamily override JSONValue Component\+Transform\+::to\+JSON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Serializes the component to JSON. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_af0d0ab3f7fe3e570052e2055b6a5c673}{IComponent}}.
+
+\Hypertarget{classComponentTransform_ab743dbbeabec8b768a403c2b5ace8884}\label{classComponentTransform_ab743dbbeabec8b768a403c2b5ace8884} 
+\index{ComponentTransform@{ComponentTransform}!Update@{Update}}
+\index{Update@{Update}!ComponentTransform@{ComponentTransform}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Component\+Transform\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the component every frame. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_a2172e40455944e07650d7307aedad28d}{IComponent}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/component.\+d\end{DoxyCompactItemize}

@@ -1,0 +1,31 @@
+\doxysection{Game\+State Struct Reference}
+\hypertarget{structGameState}{}\label{structGameState}\index{GameState@{GameState}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structGameState_af780f05f238652be93cfee3105dd60f8}\label{structGameState_af780f05f238652be93cfee3105dd60f8} 
+void {\bfseries load\+From\+JSON} (JSONValue j)
+\begin{DoxyCompactList}\small\item\em Loads state values from a JSON object. \end{DoxyCompactList}\item 
+\Hypertarget{structGameState_adfe07ded0227d844032afa331f307e02}\label{structGameState_adfe07ded0227d844032afa331f307e02} 
+JSONValue {\bfseries to\+JSON} ()
+\begin{DoxyCompactList}\small\item\em Serializes the game state to a JSON object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structGameState_a5d9fff78886651ca0ba80466603292ef}\label{structGameState_a5d9fff78886651ca0ba80466603292ef} 
+int\mbox{[}string\mbox{]} {\bfseries m\+Int\+Map}
+\item 
+\Hypertarget{structGameState_aa70e0553b069ea87547e2594b886c3de}\label{structGameState_aa70e0553b069ea87547e2594b886c3de} 
+float\mbox{[}string\mbox{]} {\bfseries m\+Float\+Map}
+\item 
+\Hypertarget{structGameState_af4a59371f7cfa735be11dc8b8188e7d9}\label{structGameState_af4a59371f7cfa735be11dc8b8188e7d9} 
+string\mbox{[}string\mbox{]} {\bfseries m\+String\+Map}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Store mappings of int, float, and strings to maps. This data can keep track of various \textquotesingle{}state\textquotesingle{} in your game and otherwise be added to dynamically. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/\mbox{\hyperlink{gameapplication_8d}{gameapplication.\+d}}\end{DoxyCompactItemize}

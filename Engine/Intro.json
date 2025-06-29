@@ -1,0 +1,87 @@
+{
+    "gameState": {
+        "floats": {},
+        "ints": {},
+        "strings": {}
+    },
+    "sceneTree": {
+        "objects": [
+            {
+                "components": {
+                    "ANIMATEDTEXTURE": {
+                        "currAnimation": "video",
+                        "currFrame": 0,
+                        "filename": "assets\/images\/cutscene_metadata.json",
+                        "lastFrame": 509
+                    },
+                    "TEXTURE": {
+                        "angle": 0.0,
+                        "destScale": [
+                            0.0,
+                            0.0
+                        ],
+                        "filename": "assets\/images\/cutscene.png",
+                        "rect": [
+                            0,
+                            0,
+                            640,
+                            480
+                        ],
+                        "srcRect": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "TRANSFORM": {
+                        "local": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ],
+                        "world": [
+                            [
+                                1.0,
+                                0.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            [
+                                0.0,
+                                0.0,
+                                1.0
+                            ]
+                        ]
+                    }
+                },
+                "name": "intro_cutscene",
+                "scripts": []
+            }
+        ],
+        "treeNodes": [
+            {
+                "name": "cutscene",
+                "objName": "intro_cutscene",
+                "parent": 0
+            }
+        ]
+    },
+    "scripts": ["CutsceneScript"]
+}

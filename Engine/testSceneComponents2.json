@@ -1,0 +1,730 @@
+{"gameState":{"floats":{},"ints":{},"strings":{}},"sceneTree":{"objects":[{"components":{"COLLISION":{"rect":[40,40,2880,480],"xOffset":0,"yOffset":0},"TEXTURE":{"angle":0.0,"destScale":[0.0,0.0],"filename":"assets\/images\/map.png","rect":[0,0,2880,480],"srcRect":[0,0,0,0]},"TRANSFORM":{"local":[[1.0,0.0,0.0],[0.0,1.0,0.0],[0.0,0.0,1.0]],"world":[[1.0,0.0,0.0],[0.0,1.0,0.0],[0.0,0.0,1.0]]}},"name":"world","scripts":[]},{"components":{"ANIMATEDTEXTURE":{"currAnimation":"run","currFrame":0,"filename":"assets\/images\/player.json","lastFrame":5},"COLLISION":{"rect":[40,40,30,20],"xOffset":15,"yOffset":15},"TEXTURE":{"angle":0.0,"destScale":[0.0,0.0],"filename":"assets\/images\/player_spritesheet.png","rect":[0,0,50,50],"srcRect":[0,0,0,0]},"TRANSFORM":{"local":[[1.0,0.0,30.0],[0.0,1.0,257.0],[0.0,0.0,1.0]],"world":[[1.0,0.0,0.0],[0.0,1.0,0.0],[0.0,0.0,1.0]]}},"name":"MainPlayer","scripts":["PlayerScript"]},
+{
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 300.0], [0.0, 1.0, 250.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy1",
+    "scripts": ["EnemyScript"]
+  },
+{
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 700.0], [0.0, 1.0, 300.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy2",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 750.0], [0.0, 1.0, 300.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy3",
+    "scripts": ["EnemyScript"]
+  }, 
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 1150.0], [0.0, 1.0, 250.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy4",
+    "scripts": ["EnemyScript"]
+  }, 
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 1200.0], [0.0, 1.0, 250.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy5",
+    "scripts": ["EnemyScript"]
+  }, 
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 1250.0], [0.0, 1.0, 250.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy6",
+    "scripts": ["EnemyScript"]
+  }, 
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 1300.0], [0.0, 1.0, 250.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy7",
+    "scripts": ["EnemyScript"]
+  }, 
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 1700.0], [0.0, 1.0, 350.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy8",
+    "scripts": ["EnemyScript"]
+  }, 
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 1740.0], [0.0, 1.0, 350.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy9",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 1780.0], [0.0, 1.0, 350.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy10",
+    "scripts": ["EnemyScript"]
+  }, 
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 1820.0], [0.0, 1.0, 350.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy11",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 1860.0], [0.0, 1.0, 350.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy12",
+    "scripts": ["EnemyScript"]
+  }, 
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 1900.0], [0.0, 1.0, 350.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy13",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 2000.0], [0.0, 1.0, 300.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy14",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 2040.0], [0.0, 1.0, 280.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy15",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 2080.0], [0.0, 1.0, 260.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy16",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 2120.0], [0.0, 1.0, 240.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy17",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 2160.0], [0.0, 1.0, 220.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy18",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 2200.0], [0.0, 1.0, 200.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy19",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 2240.0], [0.0, 1.0, 180.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy20",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 2340.0], [0.0, 1.0, 310.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy21",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 2380.0], [0.0, 1.0, 230.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy22",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 2420.0], [0.0, 1.0, 310.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy23",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 2460.0], [0.0, 1.0, 230.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy24",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 2500.0], [0.0, 1.0, 310.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy25",
+    "scripts": ["EnemyScript"]
+  },
+  {
+    "components": {
+      "ANIMATEDTEXTURE": {
+        "currAnimation": "run",
+        "currFrame": 0,
+        "filename": "assets/images/enemy.json",
+        "lastFrame": 5
+      },
+      "COLLISION": {
+        "rect": [40, 40, 30, 30],
+        "xOffset": 0,
+        "yOffset": 10
+      },
+      "TEXTURE": {
+        "angle": 0.0,
+        "destScale": [0.0, 0.0],
+        "filename": "assets/images/enemy_spritesheet.png",
+        "rect": [0, 0, 30, 40],
+        "srcRect": [0, 0, 0, 0]
+      },
+      "TRANSFORM": {
+        "local": [[1.0, 0.0, 2540.0], [0.0, 1.0, 230.0], [0.0, 0.0, 1.0]],
+        "world": [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+      }
+    },
+    "name": "Enemy26",
+    "scripts": ["EnemyScript"]
+  },
+  {"components":{"COLLISION":{"rect":[40,40,2880,115],"xOffset":0,"yOffset":0},"TRANSFORM":{"local":[[1.0,0.0,30.0],[0.0,1.0,230.0],[0.0,0.0,1.0]],"world":[[1.0,0.0,0.0],[0.0,1.0,0.0],[0.0,0.0,1.0]]}},"name":"carpet","scripts":[]}],"treeNodes":[{"name":"player","objName":"MainPlayer","parent":0},{"name":"enemy1","objName":"Enemy1","parent":0},{"name":"enemy2","objName":"Enemy2","parent":0},{"name":"enemy3","objName":"Enemy3","parent":0},{"name":"enemy4","objName":"Enemy4","parent":0},{"name":"enemy5","objName":"Enemy5","parent":0},{"name":"enemy6","objName":"Enemy6","parent":0},{"name":"enemy7","objName":"Enemy7","parent":0},{"name":"enemy8","objName":"Enemy8","parent":0},{"name":"enemy9","objName":"Enemy9","parent":0},{"name":"enemy10","objName":"Enemy10","parent":0},{"name":"enemy11","objName":"Enemy11","parent":0},{"name":"enemy12","objName":"Enemy12","parent":0},{"name":"enemy13","objName":"Enemy13","parent":0},{"name":"enemy14","objName":"Enemy14","parent":0},{"name":"enemy15","objName":"Enemy15","parent":0},{"name":"enemy16","objName":"Enemy16","parent":0},{"name":"enemy17","objName":"Enemy17","parent":0},{"name":"enemy18","objName":"Enemy18","parent":0},{"name":"enemy19","objName":"Enemy19","parent":0},{"name":"enemy20","objName":"Enemy20","parent":0},{"name":"enemy21","objName":"Enemy21","parent":0},{"name":"enemy22","objName":"Enemy22","parent":0},{"name":"enemy23","objName":"Enemy23","parent":0},{"name":"enemy24","objName":"Enemy24","parent":0},{"name":"enemy25","objName":"Enemy25","parent":0},{"name":"enemy26","objName":"Enemy26","parent":0},{"name":"carpet","objName":"carpet","parent":0},{"name":"world","objName":"world","parent":0}]},"scripts":["GameScript"]}

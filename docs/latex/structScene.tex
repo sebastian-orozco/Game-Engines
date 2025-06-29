@@ -1,0 +1,54 @@
+\doxysection{Scene Struct Reference}
+\hypertarget{structScene}{}\label{structScene}\index{Scene@{Scene}}
+
+
+\doxylink{structScene}{Scene} encapsulates the camera, tree, and game state for a level or UI screen.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structScene_a82a1c5606c9be8b672adf099a1fe64d6}\label{structScene_a82a1c5606c9be8b672adf099a1fe64d6} 
+{\bfseries this} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}r, string json\+Data\+File, \mbox{\hyperlink{classCamera}{Camera}} cam)
+\begin{DoxyCompactList}\small\item\em Create scene with a new camera. \end{DoxyCompactList}\item 
+\Hypertarget{structScene_ac3663babd72a75e40dbfa6757ffae18f}\label{structScene_ac3663babd72a75e40dbfa6757ffae18f} 
+void {\bfseries Input} ()
+\begin{DoxyCompactList}\small\item\em Forwards input handling to the scene tree. \end{DoxyCompactList}\item 
+\Hypertarget{structScene_a71a71b4f7752b853ff8032b0941a9d8d}\label{structScene_a71a71b4f7752b853ff8032b0941a9d8d} 
+void {\bfseries Update} ()
+\begin{DoxyCompactList}\small\item\em Updates scripts and the scene tree. \end{DoxyCompactList}\item 
+\Hypertarget{structScene_a91913b921d41d374e00eac347358dc14}\label{structScene_a91913b921d41d374e00eac347358dc14} 
+void {\bfseries Render} ()
+\begin{DoxyCompactList}\small\item\em Renders the scene tree. \end{DoxyCompactList}\item 
+\Hypertarget{structScene_a431b1373b5c9a336a0db68d8854ab1d6}\label{structScene_a431b1373b5c9a336a0db68d8854ab1d6} 
+void {\bfseries load\+From\+JSON} (JSONValue j)
+\begin{DoxyCompactList}\small\item\em Loads the scene state from a JSON object. \end{DoxyCompactList}\item 
+\Hypertarget{structScene_a8b324216964e4c024924769ee848004a}\label{structScene_a8b324216964e4c024924769ee848004a} 
+JSONValue {\bfseries to\+JSON} ()
+\begin{DoxyCompactList}\small\item\em Serializes the scene into a JSON object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structScene_ab1baaa69211c205744c8d9c180539a9c}\label{structScene_ab1baaa69211c205744c8d9c180539a9c} 
+\mbox{\hyperlink{structSceneTree}{Scene\+Tree}} {\bfseries m\+Scene\+Tree}
+\item 
+\Hypertarget{structScene_aa40dd3c1e35d939c50f1260f13d28a09}\label{structScene_aa40dd3c1e35d939c50f1260f13d28a09} 
+\mbox{\hyperlink{classCamera}{Camera}} {\bfseries m\+Camera}
+\item 
+\Hypertarget{structScene_a4259ec9391fad3bf1a9edfcf97f79c7c}\label{structScene_a4259ec9391fad3bf1a9edfcf97f79c7c} 
+\mbox{\hyperlink{structGameState}{Game\+State}} {\bfseries m\+Game\+State}
+\item 
+\Hypertarget{structScene_a2721474a504b1905d897ba5ca98ae9b6}\label{structScene_a2721474a504b1905d897ba5ca98ae9b6} 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} {\bfseries m\+Renderer\+Ref}
+\item 
+\Hypertarget{structScene_abde85126d766c956d5d7b5a7720cd763}\label{structScene_abde85126d766c956d5d7b5a7720cd763} 
+\mbox{\hyperlink{interfaceIScript}{IScript}}\mbox{[}$\,$\mbox{]} {\bfseries m\+Scene\+Scripts}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{structScene}{Scene} encapsulates the camera, tree, and game state for a level or UI screen. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/\mbox{\hyperlink{gameapplication_8d}{gameapplication.\+d}}\end{DoxyCompactItemize}

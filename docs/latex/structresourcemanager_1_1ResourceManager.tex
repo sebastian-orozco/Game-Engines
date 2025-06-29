@@ -1,0 +1,57 @@
+\doxysection{resourcemanager\+::Resource\+Manager Struct Reference}
+\hypertarget{structresourcemanager_1_1ResourceManager}{}\label{structresourcemanager_1_1ResourceManager}\index{resourcemanager::ResourceManager@{resourcemanager::ResourceManager}}
+
+
+Singleton resource manager for loading and caching images and music.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structresourcemanager_1_1ResourceManager_a1310acdf3ff2ccc2ee20457cbe768f0b}\label{structresourcemanager_1_1ResourceManager_a1310acdf3ff2ccc2ee20457cbe768f0b} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}this} ()
+\begin{DoxyCompactList}\small\item\em Frees all cached textures and music on destruction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structresourcemanager_1_1ResourceManager_a8b84503eeff925b529e8819ba49dcc44}\label{structresourcemanager_1_1ResourceManager_a8b84503eeff925b529e8819ba49dcc44} 
+static {\bfseries Set\+Renderer} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\item 
+\Hypertarget{structresourcemanager_1_1ResourceManager_a1614f89e6f09e4e292152e85adc15a1e}\label{structresourcemanager_1_1ResourceManager_a1614f89e6f09e4e292152e85adc15a1e} 
+static \mbox{\hyperlink{structresourcemanager_1_1ResourceManager}{Resource\+Manager}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em Returns the singleton instance of the resource manager. \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structresourcemanager_1_1ResourceManager_a1ab44925391c5825994989bd157fd7fb}{Load\+BMPResource}} (string filename)
+\item 
+static SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structresourcemanager_1_1ResourceManager_a08f7f135e60254d33b7e1ba6f519353b}{Load\+Image\+Resource}} (string filename)
+\item 
+static Mix\+\_\+\+Music \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structresourcemanager_1_1ResourceManager_af299e45907e229bf98966e25da1d9b03}{Load\+Music\+Resource}} (string filename)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton resource manager for loading and caching images and music. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structresourcemanager_1_1ResourceManager_a1ab44925391c5825994989bd157fd7fb}\label{structresourcemanager_1_1ResourceManager_a1ab44925391c5825994989bd157fd7fb} 
+\index{resourcemanager::ResourceManager@{resourcemanager::ResourceManager}!LoadBMPResource@{LoadBMPResource}}
+\index{LoadBMPResource@{LoadBMPResource}!resourcemanager::ResourceManager@{resourcemanager::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadBMPResource()}{LoadBMPResource()}}
+{\footnotesize\ttfamily static SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} resourcemanager\+::\+Resource\+Manager\+::\+Load\+BMPResource (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Loads a BMP image file and returns a texture. Returns a cached version if already loaded. \Hypertarget{structresourcemanager_1_1ResourceManager_a08f7f135e60254d33b7e1ba6f519353b}\label{structresourcemanager_1_1ResourceManager_a08f7f135e60254d33b7e1ba6f519353b} 
+\index{resourcemanager::ResourceManager@{resourcemanager::ResourceManager}!LoadImageResource@{LoadImageResource}}
+\index{LoadImageResource@{LoadImageResource}!resourcemanager::ResourceManager@{resourcemanager::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadImageResource()}{LoadImageResource()}}
+{\footnotesize\ttfamily static SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} resourcemanager\+::\+Resource\+Manager\+::\+Load\+Image\+Resource (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Loads an image using SDL\+\_\+\+Image and returns a texture. Returns a cached version if already loaded. \Hypertarget{structresourcemanager_1_1ResourceManager_af299e45907e229bf98966e25da1d9b03}\label{structresourcemanager_1_1ResourceManager_af299e45907e229bf98966e25da1d9b03} 
+\index{resourcemanager::ResourceManager@{resourcemanager::ResourceManager}!LoadMusicResource@{LoadMusicResource}}
+\index{LoadMusicResource@{LoadMusicResource}!resourcemanager::ResourceManager@{resourcemanager::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadMusicResource()}{LoadMusicResource()}}
+{\footnotesize\ttfamily static Mix\+\_\+\+Music \texorpdfstring{$\ast$}{*} resourcemanager\+::\+Resource\+Manager\+::\+Load\+Music\+Resource (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Loads a music file and returns a Mix\+\_\+\+Music pointer. Returns a cached version if already loaded. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/resourcemanager.\+d\end{DoxyCompactItemize}

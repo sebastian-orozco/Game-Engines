@@ -1,0 +1,33 @@
+\doxysection{factory\+::Component\+Factory Struct Reference}
+\hypertarget{structfactory_1_1ComponentFactory}{}\label{structfactory_1_1ComponentFactory}\index{factory::ComponentFactory@{factory::ComponentFactory}}
+
+
+Singleton factory for creating components dynamically.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfactory_1_1ComponentFactory_af682470802389b9c38ed5fa2c295809b}\label{structfactory_1_1ComponentFactory_af682470802389b9c38ed5fa2c295809b} 
+static \mbox{\hyperlink{structfactory_1_1ComponentFactory}{Component\+Factory}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Instance} ()
+\item 
+\Hypertarget{structfactory_1_1ComponentFactory_a9f7decf6ae99dfb23c6dd6a3c8fa95c8}\label{structfactory_1_1ComponentFactory_a9f7decf6ae99dfb23c6dd6a3c8fa95c8} 
+static {\bfseries Register\+Component\+Factory} (string type, Component\+Factory\+Callback cb)
+\item 
+\Hypertarget{structfactory_1_1ComponentFactory_a86eaea7b725184b21a0f0986b49642cd}\label{structfactory_1_1ComponentFactory_a86eaea7b725184b21a0f0986b49642cd} 
+static {\bfseries Create\+Component} (string type, size\+\_\+t owner)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structfactory_1_1ComponentFactory_a0afa6b1c7ad55b57bc9fed6a55ca85e4}\label{structfactory_1_1ComponentFactory_a0afa6b1c7ad55b57bc9fed6a55ca85e4} 
+alias {\bfseries Component\+Factory\+Callback} = \mbox{\hyperlink{interfaceIComponent}{IComponent}} delegate(size\+\_\+t owner)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton factory for creating components dynamically. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/factory.\+d\end{DoxyCompactItemize}

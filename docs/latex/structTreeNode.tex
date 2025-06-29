@@ -1,0 +1,36 @@
+\doxysection{Tree\+Node Struct Reference}
+\hypertarget{structTreeNode}{}\label{structTreeNode}\index{TreeNode@{TreeNode}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structTreeNode_accae186967d3180a5537216744923024}\label{structTreeNode_accae186967d3180a5537216744923024} 
+{\bfseries this} (\mbox{\hyperlink{classGameObject}{Game\+Object}} \texorpdfstring{$\ast$}{*}obj)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structTreeNode}{Tree\+Node} with an associated \doxylink{classGameObject}{Game\+Object}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structTreeNode_a856b1879be9d62abd8e89189ca214079}{DFS}} (void delegate(\mbox{\hyperlink{classGameObject}{Game\+Object}} \texorpdfstring{$\ast$}{*}) object\+Func, bool top\+Down=true)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structTreeNode_aa1d52222bd2a2407a8949b0fda3d9693}\label{structTreeNode_aa1d52222bd2a2407a8949b0fda3d9693} 
+\mbox{\hyperlink{structTreeNode}{Tree\+Node}} \texorpdfstring{$\ast$}{*} {\bfseries children}
+\item 
+\Hypertarget{structTreeNode_a5079f055e5f1c563051a44703bb6b479}\label{structTreeNode_a5079f055e5f1c563051a44703bb6b479} 
+\mbox{\hyperlink{classGameObject}{Game\+Object}} \texorpdfstring{$\ast$}{*} {\bfseries object}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a node in the scene tree. Each node optionally holds a \doxylink{classGameObject}{Game\+Object} and can have named child nodes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structTreeNode_a856b1879be9d62abd8e89189ca214079}\label{structTreeNode_a856b1879be9d62abd8e89189ca214079} 
+\index{TreeNode@{TreeNode}!DFS@{DFS}}
+\index{DFS@{DFS}!TreeNode@{TreeNode}}
+\doxysubsubsection{\texorpdfstring{DFS()}{DFS()}}
+{\footnotesize\ttfamily void Tree\+Node\+::\+DFS (\begin{DoxyParamCaption}\item[{void delegate(\mbox{\hyperlink{classGameObject}{Game\+Object}} \texorpdfstring{$\ast$}{*})}]{object\+Func,  }\item[{bool}]{top\+Down = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Performs a depth-\/first search traversal on the scene tree. Params\+: object\+Func = delegate to apply to each \doxylink{classGameObject}{Game\+Object} top\+Down = whether to apply function pre-\/order (true) or post-\/order (false) 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/\mbox{\hyperlink{gameapplication_8d}{gameapplication.\+d}}\end{DoxyCompactItemize}

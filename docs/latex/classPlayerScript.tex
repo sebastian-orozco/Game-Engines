@@ -1,0 +1,60 @@
+\doxysection{Player\+Script Class Reference}
+\hypertarget{classPlayerScript}{}\label{classPlayerScript}\index{PlayerScript@{PlayerScript}}
+Inheritance diagram for Player\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPlayerScript}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPlayerScript_a8680f9f80f61ef53bfca0d1deb639e45}\label{classPlayerScript_a8680f9f80f61ef53bfca0d1deb639e45} 
+{\bfseries this} (size\+\_\+t owner)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classPlayerScript}{Player\+Script} tied to a \doxylink{classGameObject}{Game\+Object} by ID. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classPlayerScript_aca9317531a1a790a037dddde20841aeb}{Update}} ()
+\item 
+override string \mbox{\hyperlink{classPlayerScript_abbe0ab7e35c70fecaa0d51a8c5f5ee94}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of this script. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPlayerScript_a24bf666c6973ec945148d964dfc91816}\label{classPlayerScript_a24bf666c6973ec945148d964dfc91816} 
+Vec2f {\bfseries m\+Vel}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Script that controls the main player\textquotesingle{}s movement and animation based on keyboard input. Handles collision with world boundaries and updates transform and animation state. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPlayerScript_abbe0ab7e35c70fecaa0d51a8c5f5ee94}\label{classPlayerScript_abbe0ab7e35c70fecaa0d51a8c5f5ee94} 
+\index{PlayerScript@{PlayerScript}!GetName@{GetName}}
+\index{GetName@{GetName}!PlayerScript@{PlayerScript}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily override string Player\+Script\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the name of this script. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIScript}{IScript}}.
+
+\Hypertarget{classPlayerScript_aca9317531a1a790a037dddde20841aeb}\label{classPlayerScript_aca9317531a1a790a037dddde20841aeb} 
+\index{PlayerScript@{PlayerScript}!Update@{Update}}
+\index{Update@{Update}!PlayerScript@{PlayerScript}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Player\+Script\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Updates the player\textquotesingle{}s movement based on keyboard input. ~\newline
+ Applies animation changes and restricts movement to within map bounds. 
+
+Implements \mbox{\hyperlink{interfaceIScript}{IScript}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/scripts/playerscript.\+d\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+{
+"filepath":"./assets/images/player_spritesheet.png",
+  "format":{
+    	"width"			: 336,
+    	"height"		: 24,
+    	"tileWidth"		: 24,
+    	"tileHeight"	: 24
+  },
+  "frames":{
+		"run": [0,1,2,3,4,5],
+    	"die": [6,7,8,9,10],
+		"idle": [11,12,13]
+  }
+}
+

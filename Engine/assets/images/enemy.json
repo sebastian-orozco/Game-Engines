@@ -1,0 +1,15 @@
+{
+"filepath":"./assets/images/enemy_spritesheet.png",
+  "format":{
+    	"width"			: 448,
+    	"height"		: 64,
+    	"tileWidth"		: 32,
+    	"tileHeight"	: 64
+  },
+  "frames":{
+		"idle_shoot": [0,1,2,3,4],
+    	"shoot": [5,6,7],
+		"run": [8,9,10,11,12,13]
+  }
+}
+

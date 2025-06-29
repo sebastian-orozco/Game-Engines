@@ -1,0 +1,70 @@
+\doxysection{Cutscene\+Script Class Reference}
+\hypertarget{classCutsceneScript}{}\label{classCutsceneScript}\index{CutsceneScript@{CutsceneScript}}
+Inheritance diagram for Cutscene\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCutsceneScript}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCutsceneScript_a37f0e6336e38ce557e50b5a14e7c280a}{this}} (size\+\_\+t owner)
+\item 
+override void \mbox{\hyperlink{classCutsceneScript_afc7abdac3c8c6e9e4f4080bfe67a0601}{Update}} ()
+\item 
+override string \mbox{\hyperlink{classCutsceneScript_a7d1bdeef0597977a79e240063f585a02}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of this script. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCutsceneScript_ad4303506941d76f74446c2b4905018c6}\label{classCutsceneScript_ad4303506941d76f74446c2b4905018c6} 
+uint {\bfseries m\+Start\+Time}
+\item 
+\Hypertarget{classCutsceneScript_a9cd5bf4335d159e0a94a04eeb7863690}\label{classCutsceneScript_a9cd5bf4335d159e0a94a04eeb7863690} 
+bool {\bfseries is\+Scene\+Complete} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Script that controls the logic for a cutscene \doxylink{classGameObject}{Game\+Object}. Marks the scene as complete when the animation reaches the last frame. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCutsceneScript_a37f0e6336e38ce557e50b5a14e7c280a}\label{classCutsceneScript_a37f0e6336e38ce557e50b5a14e7c280a} 
+\index{CutsceneScript@{CutsceneScript}!this@{this}}
+\index{this@{this}!CutsceneScript@{CutsceneScript}}
+\doxysubsubsection{\texorpdfstring{this()}{this()}}
+{\footnotesize\ttfamily Cutscene\+Script\+::this (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{owner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \doxylink{classCutsceneScript}{Cutscene\+Script} tied to a \doxylink{classGameObject}{Game\+Object} by ID. Records the initial time the script starts. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCutsceneScript_a7d1bdeef0597977a79e240063f585a02}\label{classCutsceneScript_a7d1bdeef0597977a79e240063f585a02} 
+\index{CutsceneScript@{CutsceneScript}!GetName@{GetName}}
+\index{GetName@{GetName}!CutsceneScript@{CutsceneScript}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily override string Cutscene\+Script\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the name of this script. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIScript}{IScript}}.
+
+\Hypertarget{classCutsceneScript_afc7abdac3c8c6e9e4f4080bfe67a0601}\label{classCutsceneScript_afc7abdac3c8c6e9e4f4080bfe67a0601} 
+\index{CutsceneScript@{CutsceneScript}!Update@{Update}}
+\index{Update@{Update}!CutsceneScript@{CutsceneScript}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Cutscene\+Script\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Updates the cutscene logic each frame. When the current animation finishes, flags the scene as complete. 
+
+Implements \mbox{\hyperlink{interfaceIScript}{IScript}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/scripts/cutscenescript.\+d\end{DoxyCompactItemize}
